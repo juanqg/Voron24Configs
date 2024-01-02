@@ -35,6 +35,16 @@ enable_ufp = True
 
 [history]
 
+[timelapse]
+enabled = True
+gcode_verbose = True
+parkhead = True
+parkpos = custom
+park_custom_pos_x = 200.0
+park_custom_pos_y = 240.0
+park_custom_pos_dz = 10.0
+duplicatelastframe = 1
+
 [update_manager]
 channel = dev
 
@@ -42,6 +52,13 @@ channel = dev
 type = web
 repo = meteyou/mainsail
 path = ~/mainsail
+
+[update_manager timelapse]
+type = git_repo
+primary_branch = main
+path = ~/moonraker-timelapse
+origin = https://github.com/mainsail-crew/moonraker-timelapse.git
+managed_services = klipper moonraker
 
 [update_manager client z_calibration]
 type = git_repo
