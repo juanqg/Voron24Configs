@@ -37,16 +37,6 @@ enable_ufp = True
 
 [timelapse]
 enabled = True
-gcode_verbose = True
-parkhead = True
-parkpos = custom
-park_custom_pos_x = 200.0
-park_custom_pos_y = 240.0
-park_custom_pos_dz = 10.0
-park_retract_speed = 50
-park_extrude_speed = 50
-park_retract_distance = 1.0
-park_extrude_distance = 1.0
 duplicatelastframe = 1
 
 [update_manager]
